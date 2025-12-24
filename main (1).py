@@ -1,4 +1,4 @@
-pattern of square
+#pattern of square
 x=int(input())
 for i in range(x):
     for j in range(x):
@@ -6,11 +6,67 @@ for i in range(x):
     print()
 
 
-pattern of triangle
+#pattern of triangle
 x=int(input())
 for i in range(x):
     for j in range(i+1):
         print("*",end=" ")
     print()
+
+#pattern of numbers 
+x=int(input())
+for i in range(x):
+    for j in range(i+1):
+        print(j+1,end=" ")
+    print()
+
+#pattern of pyrimid
+x=int(input())
+for i in range(x):
+    for j in range(x-i-1):
+        print(" ",end="")
+    for j in range(i+1):
+        print("*",end=" ")
+    print()
+
+#pattern of diamond
+x=int(input())
+for i in range(x):
+    for j in range(x-i-1):
+        print(" ",end="")
+    for j in range(i+1):
+        print("*",end=" ")
+    print()
+for i in range(x-2,-1,-1):
+    for j in range(x-i-1):
+         print(" ",end="")
+    for j in range(i+1):
+        print("*",end=" ")
+    print()
+    #hallow pattern 
+x=int(input())
+for i in range(x+4):
+    for j in range(x-i+4):
+        print(" ",end="")
+    for j in range(i+1):
+        if(i%2!=0):
+            break
+        else:
+         print("*",end=" ")
+    print()
+#hallow pattern 2
+n=int(input())
+for i in range(n):
+    for j in range(n-i-1):
+        print(" ",end="")
+    for j in range(2*i+1):
+        print("*",end=" ")
+    print()
+
     
+
+
+
+
+
     
